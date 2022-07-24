@@ -7,7 +7,7 @@ public class Employee {
     public static String companyName;   //static field belongs to Class
 
     static {
-        companyName = "Microsoft";  // this valuse is same for all the objects of this class
+        companyName = "Microsoft";  // this value is same for all the objects of this class
     }
 
     public Employee() {
@@ -19,6 +19,16 @@ public class Employee {
         this.jobTitle = jobTitle;
         this.ID = ID;
         this.salary = salary;
+    }
+
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", ID=" + ID +
+                ", salary=" + salary +
+                ", company Name="+companyName +
+                '}';
     }
 }
 /*
